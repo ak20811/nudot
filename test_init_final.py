@@ -1982,29 +1982,7 @@ while True:
 								boss_information[cnt] = boss_information[cnt] + ouput_bossData[i][3] + ' ' + ouput_bossData[i][2] + ' : ' + ouput_bossData[i][0] + ' (멍 ' + str(ouput_bossData[i][5]) + '회)' + ' ' + ouput_bossData[i][6] + '\n'
 
 			###########################고정보스출력
-			if len(fixedboss_information[0]) != 0:
-				fixedboss_information[0] = "```diff\n" + fixedboss_information[0] + "\n```"
-			else :
-				fixedboss_information[0] = '``` ```'
-	
-			embed = discord.Embed(
-					title = "----- 고 정 보 스 -----",
-					description= fixedboss_information[0],
-					color=0x0000ff
-					)
-			await ctx.send( embed=embed, tts=False)
-			for i in range(len(fixedboss_information)-1):
-				if len(fixedboss_information[i+1]) != 0:
-					fixedboss_information[i+1] = "```diff\n" + fixedboss_information[i+1] + "\n```"
-				else :
-					fixedboss_information[i+1] = '``` ```'
-
-				embed = discord.Embed(
-						title = '',
-						description= fixedboss_information[i+1],
-						color=0x0000ff
-						)
-				await ctx.send( embed=embed, tts=False)
+			
 
 			###########################일반보스출력
 			if len(boss_information[0]) != 0:
