@@ -2016,7 +2016,7 @@ while True:
 				fixedboss_information[0] = '``` ```'
 	
 			embed = discord.Embed(
-					title = "-----  -----",
+					title = "----- 네임드 -----",
 					description= fixedboss_information[0],
 					color=0x0000ff
 					)
